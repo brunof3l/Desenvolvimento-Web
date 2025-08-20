@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolinha</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background: #1e1e1e;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .chao{
+            position: relative;
+            width: 65%;
+            height: 300px;
+            background: url("quadra.jpg");
+            overflow: hidden;
+        }
+        .bola{
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 50px;
+            background: url("bola.png") no-repeat center/cover;
+            border-radius: 70%;
+            animation: pular 1s ease-in-out infinite;
+            
+            
+        }
+        .sombra{
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            height: 10px;
+            width: 50px;
+            background:  rgba(0,0,0.0.3);
+            border-radius: 70%;
+            filter: blur(2px);
+            animation: sombraAnimada 1s ease-in-out infinite;
+        }
+        @keyframes pular{
+            0%, 100%{
+                transform: translate(-50%, 0);
+            }
+            50%{
+                transform: translate(-50%, -300%);
+            }
+        }
+        @keyframes sombraAnimada{
+            0%, 100%{
+                transform: translateX(-50%) scale(1);
+                opacity: 0.4;
+            }
+            50%{
+                transform: translateX(-50%) scaleX(0.4);
+                opacity: 0.1;
+            }
+        }  
+        
+    </style>
+</head>
+<body>
+    <div class="chao">
+        <div class="bola"></div>
+        <div class="sombra"></div>
+    </div>
+</body>
+</html>
