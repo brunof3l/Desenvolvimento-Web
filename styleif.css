@@ -1,0 +1,39 @@
+        body {
+            font-family: system-ui;
+            margin: 40px;
+            max-width: 640px;
+            background-color: black;
+
+        }
+
+        .card {
+            border: 1 solid #ddd;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 6px 20px;
+            color: aliceblue;
+        }
+
+        input,
+        button {
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+
+        }
+
+        button {
+            cursor: pointer;
+            border-radius: 8px;
+
+        }
+
+        .ok {
+            color: #0a8a0a;
+            font-weight: 700;
+        }
+
+        .erro {
+            color: red;
+            font-weight: 700;
+        }
