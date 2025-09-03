@@ -1,0 +1,13 @@
+body{
+    background-color: black;
+    color: green;
+}
+button{
+    background-color: green;
+    color: black;
+}
+input{
+    background-color: green;
+    color: black;
+    border: lime;
+}
